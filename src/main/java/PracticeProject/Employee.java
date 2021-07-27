@@ -7,14 +7,17 @@ public class Employee  {
     private final String name;
     private String position;
     private double salary;
+    private float bonus;
+
 
     private ArrayList<Equipment> equipments = new ArrayList<>();
 
-    public Employee(int id, String name, String position, double salary) {
+    public Employee(int id, String name, String position, double salary, float bonus) {
         this.id = id;
         this.name = name;
         this.position = position;
         this.salary =salary;
+        this.bonus = bonus;
     }
     public int getId(){
         return id;
@@ -35,6 +38,12 @@ public class Employee  {
     public void setPosition(String position){
         this.position=position;
     }
+    public float getBonus(){
+        return bonus;
+    }
+    public void setBonus(Float bonus){
+        this.bonus = bonus;
+    }
 
     public ArrayList<Equipment> getEquipments() {
         return equipments;
@@ -45,6 +54,14 @@ public class Employee  {
     }
     public void addEquipments(ArrayList<Equipment> equipments){
         this.equipments.addAll(equipments);
+    }
+
+    public  void addBonus(){
+        boolean hasBonus = false;
+
+        if (bonus >0) {
+            hasBonus = true;
+        }
     }
 
     @Override
