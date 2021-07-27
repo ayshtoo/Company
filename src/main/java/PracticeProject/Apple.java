@@ -12,7 +12,4 @@ public class Apple extends Company{
         return "Operating System is IOS";
     }
 
-    public void getNewEmployees(Employee employee1) {
-        System.out.println("Employee of an Apple: " + employee1.toString());
-    }
 }

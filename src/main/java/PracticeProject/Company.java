@@ -36,7 +36,7 @@ public class Company {
         return capital;
     }
 
-    public ArrayList<Employee> getNewEmployees() {
+    public ArrayList<Employee> getEmployees() {
         return employees;
     }
 
@@ -46,10 +46,4 @@ public class Company {
     public void addEmployees(ArrayList<Employee> employees){
         this.employees.addAll(employees);
     }
-
-    protected void addEmployees() {
-    }
-
-
-
 }
