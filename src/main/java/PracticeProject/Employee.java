@@ -1,5 +1,7 @@
 package PracticeProject;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 
 public class Employee  {
@@ -56,22 +58,21 @@ public class Employee  {
         this.equipments.addAll(equipments);
     }
 
-    public int addBonus(){
+    public boolean addBonus(){
         boolean hasBonus = false;
 
         if (bonus > 0) {
             hasBonus = true;
         }
-        return bonus;
+        return hasBonus;
     }
 
     @Override
     public String toString() {
-        return "{" +
+        return
                 "id=" + this.id +
                 ", name='" + this.name + '\'' +
                 ", position='" + this.position + '\'' +
-                ", salary=" + this.salary + ", bonus= " + this.bonus +
-                '}';
+                ", salary=" + this.salary + ", bonus= " + this.bonus + ", ";
     }
 }

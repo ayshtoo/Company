@@ -8,8 +8,9 @@ public class Apple extends Company{
         super(id, name, address, email, capital);
     }
 
-    public String OS(){
-        return "Operating System is IOS";
+    @Override
+    public String OS() {
+        return super.OS()+"IOS";
     }
-
 }
+

@@ -46,4 +46,9 @@ public class Company {
     public void addEmployees(ArrayList<Employee> employees){
         this.employees.addAll(employees);
     }
-}
+
+    public String OS() {
+            return ("Operating System of a company is: ");
+        }
+    }
+

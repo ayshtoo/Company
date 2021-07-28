@@ -6,8 +6,5 @@ public class SoftwareDev extends Employee{
         super(id, name, position, salary, bonus);
     }
 
-    @Override
-    public int addBonus() {
-        return super.addBonus();
-    }
+
 }
